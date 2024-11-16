@@ -1,0 +1,18 @@
+Q1. 
+Using sqrt, which makes sense since the histogram was right-skewed. The p-value on weekends is large and the variance is large, but the p-value for weekdays is still small, but it is the best value we could get out of the transformations available.
+
+Q2. 
+Original T-test if rejecting the null hypothesis ~
+The null hypothesis is that the mean of the reddit comment counts in Canada for weekdays and weekends are equal. If we reject the null hypothesis, then we conclude that the mean of the reddit comment counts in Canada for weekdays and weekends are not equal.
+Transformed T-test if rejecting the null hypothesis ~
+The null hypothesis is that the square root transformed mean of the reddit comment counts in Canada for weekdays and weekends are equal. If we reject the null hypothesis, then we conclude that the square root transformed mean of the reddit comment counts in Canada for weekdays and weekends are not equal.
+
+Q3.
+- Initial T-test: Data was not normally distributed and did not have equal variance, which violates the conditions of the T-test. So the results are not reliable.
+- Square Root Transformed T-test: Improved the normal distribution and variance, but the weekday normality p-value < 0.05 so it is still not normally distributed. T-test still does not seem reliable on the transformed results.
+- Central Limit Theorem (weekly mean): According to the CLT, if we increase our sample size then the distribution becomes normal. The normal and levene test indicate that our data is normally distributed and we have equal variance, so the T-test can be applied reliably.
+- Mann-Whitney U-Test: Does not assume normally-distributed values or equal variance, just that the observations are independent and that the values are ordinal (can be sorted). 
+
+	I think that using either the CLT or Mann-Whitney U-test produce sufficient results. I would say that using the Mann-Whitney in this case would be the better since we don't care by how much the comment counts are different by (The t-test), the question is only asking if they are different. The Mann-Whitney does not rely on transforming the data. 
+
+Q4. We know that the means are different, but by plotting the data we can see that on average it appears that more Reddit comments are posted in /r/canada on weekdays.

@@ -1,0 +1,69 @@
+SUMMARY STATISTICS: data-1.csv
+mean of x: 8.71769618641382
+mean of y: 12.522874034702584
+standard deviation of x: 12.15551723122202
+standard deviation of y: 6.63996400756785
+range of x: -22.635877790008944 to 35.23705548785129
+range of y: -2.565087832693213 to 27.38415261152477
+correlation coefficient between x and y: 0.9503256954375483
+Description: There is a strong positive correlation between the x and y values with what appears to be some noise.
+
+
+SUMMARY STATISTICS: data-2.csv
+mean of x: -0.7107871267159573
+mean of y: -0.7489869764497991
+standard deviation of x: 11.481583587790734
+standard deviation of y: 6.257917998755848
+range of x: -33.2711130771198 to 27.6470003722073
+range of y: -18.621803760419063 to 14.14731499231748
+correlation coefficient between x and y: 0.9551531665750373
+Description: There is a strong positive correlation between the x and y values with what appears to be a bit of noise.
+
+
+SUMMARY STATISTICS: data-3.csv
+mean of x: 0.9689074904200939
+mean of y: 8.508535236641327
+standard deviation of x: 2.235557861057969
+standard deviation of y: 1.1493008110024525
+range of x: -2.4490643296742807 to 4.51888491755363
+range of y: 6.641734490391763 to 10.551871022804317
+correlation coefficient between x and y: 0.9819372646760659
+Description: There is a strong positive correlation between the x and y data points.
+The data appears to cluster along 4 distinct areas, at approximately the area around points: {(-2,7), (-0,8), (2,9), (4,10)}.
+
+
+SUMMARY STATISTICS: data-4.csv
+mean of x: 49.90508614830509
+mean of y: 18.553836525423726
+standard deviation of x: 28.50861051988193
+standard deviation of y: 16.545896442941682
+range of x: 0.0 to 87.3767
+range of y: 0.0 to 44.56504
+correlation coefficient between x and y: -0.08119306735490815
+Description: The x and y values do not appear to be correlated.
+Observing the plot of data points, an image of the SFU logo is seen.
+
+
+SUMMARY STATISTICS: data-5.csv
+mean of x: 49.90999357843095
+mean of y: 18.555524937729086
+standard deviation of x: 28.500000943801354
+standard deviation of y: 16.540796301840782
+range of x: 4.337892453674525 to 91.0528633396976
+range of y: 0.0554975075811517 to 49.93419703633311
+correlation coefficient between x and y: -0.0882359898305888
+Description: The data points seem to create fairly vertical lines at the approximate x-coordinates: {7,28,48,68,88}.
+The y-values at the middle x-coordinates {28,48,68} appear closer to the upper and lower range (gaps in the middle).
+
+
+SUMMARY STATISTICS: data-6.csv
+mean of x: 7.21615517960992
+mean of y: 7.602215028237295
+standard deviation of x: 11.921599067458311
+standard deviation of y: 11.764382455006647
+range of x: -24.33382075234097 to 35.402138910929
+range of y: -22.9563569970746 to 36.07987403078143
+correlation coefficient between x and y: 0.9350685662094905
+Description: There is a very strong positive correlation between the x and y values without much noise. 
+There also appear to be two possible outliers. 
+Almost all of the points fit the line y=x fairly well, but the two outliers are around the point (25,-5).

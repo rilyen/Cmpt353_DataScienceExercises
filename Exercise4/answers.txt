@@ -1,0 +1,5 @@
+Exercise 4:
+
+1. Based on my results for the last question, I do not think that daily temperatures are a good way to predict population density. If we look at a temperature on the x-axis, there does not seem to be a range that the population exists near. It rather appears all over the place on the y-axis (population density). Does not seem like there is much correlation.
+
+2. Since it is compressed, less memory is required for storage. When we do need to transfer data, that would be quicker since there is less information that needs to be moved, since moving from disk to memory is an expensive process. An uncompressed file would take longer to move the data.

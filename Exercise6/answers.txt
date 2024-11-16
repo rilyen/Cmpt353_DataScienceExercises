@@ -1,0 +1,15 @@
+Exercise 6 Questions
+
+1. In the A/B test analysis, do you feel like we're p-hacking? How comfortable are you coming to a conclusion at p < 0.05?
+
+Yes, I do feel like we are p-hacking a bit. We start off checking all the users, and then after analyzing those results, we go back and say that we only care about the instructors and conduct more statistical tests. Although we didn't find something significant, one of them does come close (instructor more searches). I think I am comfortable for all users coming to a conclusion at p < 0.05 sine that was our initial experiment. Selecting only the instructors afterwards, maybe less comfortable. It feels like we are trying to come to the conclusion that there is a difference. 
+
+2. If we had done T-tests between each pair of sorting implementation results, how many tests would we run? If we looked for p < 0.05 in them, what would the probability be of having any false conclusions, just by chance? That's the effective p-value of the many-T-tests analysis. [We could have done a Bonferroni correction when doing multiple T-tests, which is a fancy way of saying “for m tests, look for significance at 
+alpha/m”.]
+
+There are 7 sorting implementations total, so we would have had to do (7 choose 2) = 21 T-tests. The probability of no incorrect rejection of the null is: 0.95^21 = 0.42. So alpha = 58, which is kind of really bad. 
+
+3. Give a ranking of the sorting implementations by speed, including which ones could not be distinguished. (i.e. which pairs could our experiment not conclude had different running times?)
+
+From fastest to slowest: partition_sort, qs1, qs3, qs2, qs5, qs4, merge1.
+Our experiment could not conclude that the pairs {(merge1, qs4), (qs2, qs3), (qs2, qs5), (qs3, qs5), (qs4, qs5)} could not be distinguished (could not conclude had different running times)

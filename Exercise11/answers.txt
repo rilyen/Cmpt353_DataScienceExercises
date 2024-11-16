@@ -1,0 +1,15 @@
+Exercise 11
+
+Q1. 
+In your reddit_relative.py, what intermediate results did you .cache()? Briefly describe what would have happened if you hadn't used .cache() anywhere. (No need to time it, unless you really want to.)
+
+A1.
+I cached the DataFrame we got from calculating the average score for each subreddit. I also cached the DataFrame we got from calculating the max relative score for each subreddit.
+
+If I didn't used .cache() anywhere, then the DataFrames would be destroyed and when I would try to access it again for other operations, it would need to be recalculated, so the running time would be longer.
+
+Q2. 
+How did marking DataFrames for broadcast affect the running time of the “best author” program above?
+
+A2.
+The broadcast was a bit shorter, so marking DataFrames for broadcast can reduce the running time of the "best author" program, but it was only by a few seconds. 

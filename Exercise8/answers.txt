@@ -1,0 +1,5 @@
+Exercise 8
+
+1. The kNN model did the best for the colour-prediction task. I think it is because kNN works by seeing how similar the data points are to each other. The values in colour (RGB or LAB) are similarly created based on their colour values. For kNN, RGB and LAB worked similarly, but for the Bayesian and Random Forest classifiers, it seems that LAB is a bit better than RGB. From the CIELAB color space Wikipedia page, CIELAB was intended as a perceptually uniform space, and Naive Bayes assumes that the features are uniformly distributed. For the Random Forest, since there is an L* component to the CIELAB, unlike RGB, this might help the random forest to better differentiate boundaries between different categories.
+
+2. Yes, I think that the model is making reasonable mistakes because the predicted city has similar weather patterns to the actual city (look at data from weather_clusters.py).

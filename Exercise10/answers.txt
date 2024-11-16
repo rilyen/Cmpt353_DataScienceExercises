@@ -1,0 +1,50 @@
+Exercise 10
+
+Q1. How long did your reddit_averages.py take (TIMING):
+
+(1) 
+reddit-0: no schema, no cache
+7.05s user 0.43s system 164% cpu 4.539 total
+
+reddit-0: yes schema, no cache
+6.16s user 0.36s system 160% cpu 4.055 total
+
+reddit-0: yes schema, yes cache
+12.60s user 0.62s system 198% cpu 6.649 total
+
+reddit-0: no schema, yes cache
+12.65s user 0.56s system 196% cpu 6.732 total
+
+(2) no schema, no cache
+reddit-1 output  8.23s user 0.40s system 176% cpu 4.892 total
+reddit-2 output  15.37s user 0.54s system 164% cpu 9.657 total
+reddit-2b output  30.40s user 0.76s system 142% cpu 21.824 total
+
+(3) yes schema, no cache
+reddit-1 output  7.27s user 0.48s system 161% cpu 4.792 total
+reddit-2 output  11.37s user 0.42s system 164% cpu 7.169 total
+reddit-2b output  20.97s user 0.65s system 146% cpu 14.801 total
+
+(4) yes schema, yes cache
+reddit-1 output  12.10s user 0.75s system 200% cpu 6.417 total
+reddit-2 output  14.08s user 0.69s system 186% cpu 7.910 total
+reddit-2b output  18.01s user 0.71s system 165% cpu 11.311 total
+
+Q2. Based on the above, does it look like most of the time taken to process the reddit-2 data set is in reading the files, or calculating the averages?
+
+It looks like most of the time to process the reddit-2 data set is in reading the files since adding a cache does not change much, but adding the schema cuts about 2 seconds out of the time.
+
+Q3. Where did you use .cache() in your wikipedia_popular.py? (only use it once)
+
+I used cache after creating the new 'hour' column in the dataframe, and before calling the groupby().agg(functions.max()) methods. Calling cache here is helpful since we create a new dataframe by adding the 'hour' column. By saving it in the cache, we don't need to recalculate when we use it again (ex. groupby(), functions.max(), join())
+
+
+
+
+
+
+
+
+
+
+

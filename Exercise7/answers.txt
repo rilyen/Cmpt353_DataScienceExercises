@@ -1,0 +1,5 @@
+Exercise 7 Questions
+
+1. Yes, I think that they look close enough to being normal that I can look at the ordinary least squares (OLS) p-value. The p-value obtained is 2.6e-127 < 0.05, so we can say that the slope is not zero. The slope obtained from the linear regression is positive. So I do believe that we can reasonably conclude that the ratings are increasing.
+
+2. Yes, I think that the new Kalman filter does a better job at predicting the data. We have more data points, which will help us better predict the transition matrix.

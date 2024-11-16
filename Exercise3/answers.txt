@@ -1,0 +1,4 @@
+1. When smoothing the CPU temperature, I think the LOESS smoothing works better since we have so many data points. The change in temperature is probably not as drastic as the data appears (+/- 3 degrees every minute?). Also, Kalman filtering would work better if we knew more about the system. We are using a lot of guesswork to create the covariance matrices.
+
+2. We could take into account the acceleration and gyroscope to predict how likely it is in what direction the next latitude and longitude would be. An object in motion stays in motion...
+

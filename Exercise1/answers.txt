@@ -1,0 +1,13 @@
+1. Pandas vs NumPy
+
+    Personally, I liked working with the NumPy calculations more because I like manually manipulating things, but for larger and more complex data manipulation, the Pandas library is easier to use. The code using Pandas is easier to read since there is less manual manipulation going on, since Pandas handles a lot of aspects. A good example of that is how Pandas can group and aggregate the data and create data frames. These capabilities make it easier to work with data.
+
+2. pivot_month_pandas(data) vs pivot_months_loops(data) 
+
+    The run time of pivot_months_pandas(data) was:
+    1.6 ms ± 13.9 µs per loop (mean ± std. dev. of 7 runs, 1,000 loops each)
+
+    The run time of pivot_months_loops(data) was:
+    112 ms ± 701 µs per loop (mean ± std. dev. of 7 runs, 10 loops each)
+
+    pivot_months_pandas(data) is much faster (about 100x) than pivot_months_loops(data). In pivot_months_pandas(data), the Pandas operations used are performed on the whole array, whereas in pivot_months_loops(data), the operations are performed element-wise by traversing the array in a loop, which is more expensive to run.
